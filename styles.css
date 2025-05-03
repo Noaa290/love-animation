@@ -1,0 +1,45 @@
+body {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#out .Love {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -225px;
+}
+
+#out .Love_word {
+  color: #ea80b0;
+  font-size: 1.4rem;
+  transform: translateY(-100%) rotateZ(-30deg);
+  font-family: "Dosis", sans-serif;
+  text-shadow: 0 0 10px #fff;
+  letter-spacing: 2px;
+}
+
+#out .Love:last-child .Love_word {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #ea98ba;
+}
+
+#out .Love_horizontal {
+  animation: horizontal 10s infinite alternate ease-in-out;
+}
+
+#out .Love_vertical {
+  animation: vertical 20s infinite linear;
+}
+
+@keyframes horizontal {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(200px); }
+}
+
+@keyframes vertical {
+  0% { transform: translateY(-200px); }
+  100% { transform: translateY(200px); }
+}
